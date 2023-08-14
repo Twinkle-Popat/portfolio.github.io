@@ -1,0 +1,438 @@
+.container-skillbar {
+    width: 60%;
+    height: 100%;
+    height: 100vh;
+  
+    display: flex;
+    flex-direction: column;
+    margin: auto !important;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .skillbar {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: #efefef;
+    border-radius: 3px;
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+    margin-bottom: 25px;
+    border-radius: 3px 3px 3px 3px;
+    background: hsl(207deg 50% 5%);
+    height: 32px;
+    max-height: 6%;
+  
+    overflow: hidden;
+    box-shadow: 0 0 1px 0.75px rgb(22 26 38), 0 0 2px 0.75px rgb(67 68 88 / 50%);
+  }
+  
+  .skillbar-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #fff;
+    background: #6adcfa;
+  
+    background-color: black !important;
+    background-image: linear-gradient(
+      #272028,
+      #231d1f,
+      #201921,
+      #231e1b,
+      #231c24
+    ) !important;
+    box-shadow: 0px 0 2.5px 1px #130c09 !important;
+    margin-bottom: 25px;
+    background: #09131b;
+    height: 100%;
+    overflow: hidden;
+  }
+  .skillbar-title span {
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0 20px;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 10px !important;
+    letter-spacing: 1.6px !important;
+    text-transform: uppercase !important;
+    color: #a09a9c;
+    text-shadow: 0.5px 0.5px 0.5px #352f31, -0.5px 0.5px 0.5px #161415,
+      0.5px -0.5px 0.5px #2f292b, -0.5px -0.5px 0.5px #424242, 0 0 1px #302a2c,
+      0 0 2px #160d10;
+    height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .skillbar-bar {
+    width: 0px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    height: 32px;
+    width: 50%;
+    display: block;
+    border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+  }
+  
+  .skill-bar-percent {
+    position: absolute;
+    right: 6px;
+    top: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: white;
+    font-family: Roboto Condensed;
+  }
+  
+  .one,
+  .two,
+  .three,
+  .four,
+  .five,
+  .six,
+  .seven {
+    background-image: linear-gradient(
+      var(--center-1),
+      var(--center-2),
+      var(--center-3)
+    );
+    box-shadow: 0 0 0.5px var(--center-3),
+      -3px -20px 14px 3px rgba(20, 7, 14, 0.15),
+      3px 20px 14px -3px rgba(241, 249, 255, 0.025),
+      -3px -17px 14px -3px rgba(241, 249, 255, 0.025),
+      0 -20px 10px -10px rgba(44, 6, 13, 0.05) inset,
+      0 -0px 10px -10px rgba(44, 6, 13, 0.05) inset,
+      0 30px 20px -10px rgba(241, 249, 255, 0.05) inset,
+      0 -0.25px 0.75px 0.25px var(--center-1),
+      0 0.5px 0.75px 0.25px var(--center-3), 0 -0.75px 2px -0.75px var(--center-1),
+      0 0.75px 2px -0.75px var(--center-3),
+      0 1px 1.75px -0.75px var(--center-4) inset,
+      0 -3px 4px -3px var(--center-5) inset, 0 3px 3px -3px var(--center-6),
+      0 -4px 7px -4px var(--center-1), 0 4px 7px -4px var(--center-6);
+  }
+  
+  .skillbar-bar.one {
+   background-color: #5caafc;
+  }
+  
+  .skillbar-bar.two {
+    background-color: hsl(135deg 100% 72%);;
+   
+    
+  }
+  
+  .skillbar-bar.three {
+    background-color: rgb(106 90 189) ;
+   
+  }
+  
+  .four {
+    background-color: rgb(21 202 247);
+  }
+  
+  .six {
+    background-color:rgb(179 234 164) ;
+   
+  }
+  
+  .five {
+    background-color:hsl(188deg 100% 69%);
+    
+  }
+  
+  .four {
+    background-color: hsl(198deg 100% 69%);
+    
+  }
+  
+  .seven {
+    background-color:#ffe160 ;
+  
+  }
+  
+
+  .box{
+    background-color: black;
+    width: 80vm;
+    height: 2px;
+  
+    
+  }
+
+  .timeline {
+    position: relative;
+    width: 660px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 1em 0;
+    list-style-type: none;
+  }
+  
+  .timeline:before {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    content: ' ';
+    display: block;
+    width: 6px;
+    height: 100%;
+    margin-left: -3px;
+    background: rgb(80,80,80);
+    background: -moz-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+    background: -webkit-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+    background: -o-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+    background: -ms-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+    background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+    
+    z-index: 5;
+  }
+  
+  .timeline li {
+    padding: 1em 0;
+  }
+  
+  .timeline li:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  
+  .direction-l {
+    position: relative;
+    width: 300px;
+    float: left;
+    text-align: right;
+  }
+  
+  .direction-r {
+    position: relative;
+    width: 300px;
+    float: right;
+  }
+  
+  .flag-wrapper {
+    position: relative;
+    display: inline-block;
+    
+    text-align: center;
+  }
+  
+  .flag {
+    position: relative;
+    display: inline;
+    background: rgb(248,248,248);
+    padding: 6px 10px;
+    border-radius: 5px;
+    
+    font-weight: 600;
+    text-align: left;
+  }
+  
+  .direction-l .flag {
+    -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+    -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+    box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  }
+  
+  .direction-r .flag {
+    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+    -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  }
+  
+  .direction-l .flag:before,
+  .direction-r .flag:before {
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    content: ' ';
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin-top: -10px;
+    background: #fff;
+    border-radius: 10px;
+    border: 4px solid rgb(255,80,80);
+    z-index: 10;
+  }
+  
+  .direction-r .flag:before {
+    left: -40px;
+  }
+  
+  .direction-l .flag:after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    height: 0;
+    width: 0;
+    margin-top: -8px;
+    border: solid transparent;
+    border-left-color: rgb(248,248,248);
+    border-width: 8px;
+    pointer-events: none;
+  }
+  
+  .direction-r .flag:after {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    height: 0;
+    width: 0;
+    margin-top: -8px;
+    border: solid transparent;
+    border-right-color: rgb(248,248,248);
+    border-width: 8px;
+    pointer-events: none;
+  }
+  
+  .time-wrapper {
+    display: inline;
+    
+    line-height: 1em;
+    font-size: 0.66666em;
+    color: rgb(250,80,80);
+    vertical-align: middle;
+  }
+  
+  .direction-l .time-wrapper {
+    float: left;
+  }
+  
+  .direction-r .time-wrapper {
+    float: right;
+  }
+  
+  .time {
+    display: inline-block;
+    padding: 4px 6px;
+    background: rgb(248,248,248);
+  }
+  
+  .desc {
+    margin: 1em 0.75em 0 0;
+    
+    font-size: 0.77777em;
+    font-style: italic;
+    line-height: 1.5em;
+  }
+  
+  .direction-r .desc {
+    margin: 1em 0 0 0.75em;
+  }
+  
+  /* ================ Timeline Media Queries ================ */
+  
+  @media screen and (max-width: 660px) {
+  
+  .timeline {
+       width: 100%;
+      padding: 4em 0 1em 0;
+  }
+  
+  .timeline li {
+      padding: 2em 0;
+  }
+  
+  .direction-l,
+  .direction-r {
+      float: none;
+      width: 100%;
+  
+      text-align: center;
+  }
+  
+  .flag-wrapper {
+      text-align: center;
+  }
+  
+  .flag {
+      background: rgb(255,255,255);
+      z-index: 15;
+  }
+  
+  .direction-l .flag:before,
+  .direction-r .flag:before {
+    position: absolute;
+    top: -30px;
+      left: 50%;
+      content: ' ';
+      display: block;
+      width: 12px;
+      height: 12px;
+      margin-left: -9px;
+      background: #fff;
+      border-radius: 10px;
+      border: 4px solid rgb(255,80,80);
+      z-index: 10;
+  }
+  
+  .direction-l .flag:after,
+  .direction-r .flag:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: -8px;
+      height: 0;
+      width: 0;
+      margin-left: -8px;
+      border: solid transparent;
+      border-bottom-color: rgb(255,255,255);
+      border-width: 8px;
+      pointer-events: none;
+  }
+  
+  .time-wrapper {
+      display: block;
+      position: relative;
+      margin: 4px 0 0 0;
+      z-index: 14;
+  }
+  
+  .direction-l .time-wrapper {
+      float: none;
+  }
+  
+  .direction-r .time-wrapper {
+      float: none;
+  }
+  
+  .desc {
+      position: relative;
+      margin: 1em 0 0 0;
+      padding: 1em;
+      background: rgb(245,245,245);
+      -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+      -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+      box-shadow: 0 0 1px rgba(0,0,0,0.20);
+      
+    z-index: 15;
+  }
+  
+  .direction-l .desc,
+  .direction-r .desc {
+      position: relative;
+      margin: 1em 1em 0 1em;
+      padding: 1em;
+      
+    z-index: 15;
+  }
+  
+  }
+  
+ 
+  
+  
